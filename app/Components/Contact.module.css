@@ -1,0 +1,33 @@
+.contactSection {
+    background-color: #e0fbfc;
+    padding-bottom: 20px;
+}
+
+.contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.image {
+    height: 50px;
+    width: 50px;
+    padding-right: 20px;
+}
+
+.label {
+    font-size: large;
+}
+
+.input {
+    margin-bottom: 10px;
+    width: 200px
+}
+
+.message {
+    width: 300px;
+    height: 150px;
+    resize: none
+}

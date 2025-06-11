@@ -1,0 +1,74 @@
+.portfolioSection {
+    background-color: #e0fbfc;
+    padding-bottom: 20px;
+}
+
+.cardsContainer {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.modalContent {
+    position: fixed;
+    width: 450px;
+    height: 280px;
+    top: calc(50% - 140px);
+    left: calc(50% - 225px);
+    background-color: #98c1d9;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+.modalContentImg {
+    height: 150px;
+    width: 150px;
+}
+
+.modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width : 100%;
+    backdrop-filter: blur(2px);
+    display: none;
+}
+
+.exitBtn {
+    position: absolute;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    right: 0px;
+    top: 0px;
+}
+
+.exitBtn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.exitText {
+    margin: 0;
+}
+
+@media (max-width: 560px){
+    .modalContent {
+        width: 80%;
+        left: calc(10% - 10px);
+    }
+
+    .modalContentImg {
+        height: 100px;
+        width: 100px;
+    }
+}

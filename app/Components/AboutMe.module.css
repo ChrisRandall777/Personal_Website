@@ -1,0 +1,47 @@
+.AboutMeSection {
+    background-color: #e0fbfc;
+    padding-bottom: 20px;
+}
+
+.spaceDiv {
+    height: 60px;
+}
+
+.container {
+    display: flex;
+    padding: 0 20px;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgContainer {
+    text-align: center;
+}
+
+.img {
+    width: 289px;
+    height: 304px;
+}
+
+.colorText {
+    background: linear-gradient(to right, darkblue, red);
+    background-clip: text;
+    color: transparent
+}
+
+@media (max-width: 760px){
+    .container {
+        flex-wrap: wrap;
+        font-size: small;
+    }
+}
+
+/* .name {
+    width: fit-content;
+    padding-top: 10px;
+    margin: 0px auto;
+    background: linear-gradient(to right, #3d5a80, #ee6c4d);
+    background-clip: text;
+    color: transparent
+} */

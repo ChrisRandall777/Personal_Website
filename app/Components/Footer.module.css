@@ -1,0 +1,51 @@
+.footerSection {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ee6c4d;
+}
+
+.attrText {
+    margin: 0;
+    width: fit-content;
+    margin: auto;
+}
+
+.attrText:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.attributionsPopUp {
+    line-height: normal;
+    position: absolute;
+    margin-left: 30%;
+    bottom: 60px;
+    width: 40%;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: #98c1d9;
+    text-align: center;
+    display: none;
+}
+
+.exitBtn {
+    position: absolute;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    right: 0px;
+    top: 0px;
+}
+
+.exitBtn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.exitText {
+    margin: 0;
+}
