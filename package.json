@@ -2,7 +2,7 @@
   "name": "personal_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/ChrisRandall777/Personal_Website.git",
+  "homepage": "https://chrisrandall777.github.io/Personal_Website",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
