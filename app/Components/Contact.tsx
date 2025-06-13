@@ -21,12 +21,12 @@ const Contact = () => {
                                 <td><p>chrisrandallvh@gmail.com</p></td>
                             </tr>
                             <tr>
-                                <td><a href="https://www.linkedin.com/in/chrisrandall99" target="_blank"><img className={styles.image} src="linkedin.png"/></a></td>
-                                <td><p>linkedin.com/in/chrisrandall99</p></td>
+                                <td><img className={styles.image} src="linkedin.png"/></td>
+                                <td><a href="https://www.linkedin.com/in/chrisrandall99" target="_blank"><p>linkedin.com/in/chrisrandall99</p></a></td>
                             </tr>
                             <tr>
                                 <td><img className={styles.image} src="phone-call.png"/></td>
-                                <td><p>847-257-5747</p></td>
+                                <td><a href="tel:+18472575747"><p>847-257-5747</p></a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -52,7 +52,7 @@ const Contact = () => {
                                 btn.value = ("sending...")
 
                                 emailjs.sendForm("service_2ae6jzq", "template_b40x4u9", form, {
-                                    publicKey: "86jzy4t4DpFHFgdNN"
+                                    publicKey: "9bJ-rMzJNPr-PI86H"
                                 })
                                     .then(() => {
                                             btn.value = "Submit"
@@ -64,7 +64,10 @@ const Contact = () => {
                                             msgEle.value = ""
                                             alert("Form Sent!")
                                     }, (err) => {
+                                            btn.value = "Submit"
+                                            console.log(err)
                                             alert("Sorry, their was an error sending the form")
+                                            
                                     })
                             }
 

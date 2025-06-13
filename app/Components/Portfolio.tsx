@@ -51,11 +51,15 @@ export default function(){
                         <div id="exitBtn" className={styles.exitBtn} onClick={(e) => closeModal(e)}>
                             <h1 id="exitText" className={styles.exitText}>&times;</h1>
                         </div>
-                        <div style={{ textAlign: "center" }}>
+                        {/* <div style={{ textAlign: "center" }}>
                             <img id="image" className={styles.modalContentImg}/>
                             <h1 id="modalTitle"></h1>    
-                        </div>
+                        </div> */}
                         <div>
+                            <div style={{ textAlign: "center"}}>
+                                <h1 id="modalTitle"></h1>    
+                            </div>
+                            
                             <p id="description"></p>
                             <p id="toolsUsed"></p>   
                         </div>
@@ -71,6 +75,10 @@ export default function(){
 function openModal(info: any){
     let modalTitle = document.getElementById("modalTitle")
     modalTitle ? modalTitle.innerHTML = `${info.title}` : null
+    // if(info.title === "Minesweeper")
+    //     modalTitle ? modalTitle.innerHTML = "Mine-\nsweeper" : null    
+    // else
+    //     modalTitle ? modalTitle.innerHTML = `${info.title}` : null
 
     let image = document.getElementById("image")
     image ? image.setAttribute("src", info.img) : null

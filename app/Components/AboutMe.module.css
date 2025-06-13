@@ -37,6 +37,13 @@
     }
 }
 
+@media (max-width: 350px){
+    .img {
+        width: 193px;
+        height: 203px;
+    }
+}
+
 /* .name {
     width: fit-content;
     padding-top: 10px;

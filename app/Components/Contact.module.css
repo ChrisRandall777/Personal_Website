@@ -31,3 +31,9 @@
     height: 150px;
     resize: none
 }
+
+@media (max-width: 350px){
+    .message {
+        width: 250px;
+    }
+}
