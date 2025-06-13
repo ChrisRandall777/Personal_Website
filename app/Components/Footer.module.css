@@ -20,10 +20,15 @@
 .attributionsPopUp {
     line-height: normal;
     position: absolute;
-    margin-left: 30%;
+    
+    /* margin-left: 30%;
+    width: 40%; */
+    width: 300px;
+    padding: 10px;
+    margin-left: calc(50% - 150px - 10px);
+
     bottom: 60px;
-    width: 40%;
-    height: 300px;
+    height: 270px;
     overflow-y: scroll;
     background-color: #98c1d9;
     text-align: center;
@@ -49,3 +54,10 @@
 .exitText {
     margin: 0;
 }
+
+/* @media (max-width: 900px){
+    .attributionsPopUp {
+        margin-left: 10%;
+        width: 80%;
+    }
+} */
