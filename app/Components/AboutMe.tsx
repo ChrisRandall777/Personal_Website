@@ -9,7 +9,7 @@ export default function AboutMe(){
                 <h1 className="sectionHeader">About Me</h1>
                 <div className={styles.container}>
                     <div>
-                        <h1 style={{marginTop: "0px"}}>Hi, I'm Chris!<br/>I'm a Software Developer who's passionate about <span className={styles.colorText}>Web Development</span> and <span className={styles.colorText}>Data Analytics</span></h1>
+                        <h1 style={{marginTop: "0px"}}>Hi, I'm Chris!<br/>I'm a Software Developer with a Computer Science degree from the University of Illinois who's passionate about <span className={styles.colorText}>Programming</span> and <span className={styles.colorText}>Web Development</span></h1>
                         <h1>Check out my Skills, Portfolio, and Contact Info below!</h1>
                     </div>
                     <div className={styles.imgContainer}>

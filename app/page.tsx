@@ -6,7 +6,11 @@ import Skills from "./Components/Skillls"
 import Portfolio from "./Components/Portfolio";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer"
-import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Chris's Website"
+}
 
 export default function Home() {
   return (
