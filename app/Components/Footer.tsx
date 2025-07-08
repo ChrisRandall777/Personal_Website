@@ -38,7 +38,8 @@ const Footer = () => {
             <a href="https://www.flaticon.com/free-icons/basketball" title="basketball icons">Basketball icons created by GOWI - Flaticon</a><br></br><br></br>
             <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a><br></br><br></br>
             <a href="https://www.flaticon.com/free-icons/interaction" title="interaction icons">Interaction icons created by Enamo Studios - Flaticon</a><br></br><br></br>
-            <a href="https://www.flaticon.com/free-icons/phone-number" title="phone number icons">Phone number icons created by lakonicon - Flaticon</a><br></br>
+            <a href="https://www.flaticon.com/free-icons/phone-number" title="phone number icons">Phone number icons created by lakonicon - Flaticon</a><br></br><br></br>
+            <a href="https://www.flaticon.com/free-icons/slot-machine" title="slot machine icons">Slot machine icons created by Freepik - Flaticon</a><br></br>
           </div>
           
         </div>

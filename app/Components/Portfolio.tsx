@@ -31,6 +31,13 @@ let portfolioItems = [
         site: "",
         description: "Website allowing users to join or create fantasy basketball leagues",
         toolsUsed: "HTML, CSS, JS, React, Node.js, Express, and an API"
+    },
+    {
+        img: "slot-machine.png",
+        title: "Slot Game",
+        site: "https://chrisrandall777.github.io/Slot/",
+        description: "Slot game including multiple features such as free spins, auto-spinning, and the chance for symbols to upgrade",
+        toolsUsed: "HTML, CSS, JS, CSS Flexbox, and CSS Animations"
     }
 ]
 
