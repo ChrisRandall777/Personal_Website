@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import "../globals.css"
 import styles from "./Contact.module.css"
 import Head from 'next/head'
 import emailjs from "@emailjs/browser"
@@ -9,7 +8,6 @@ const Contact = () => {
   return (
     <>
         <div className={styles.contactSection}>
-            <div className="spaceDiv"></div>
             <h1 className='sectionHeader'>Contact Info</h1>
             <div className={styles.contactContainer}>
                 <div>

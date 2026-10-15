@@ -1,5 +1,4 @@
 "use client";
-import "../globals.css"
 import styles from "./NavBar.module.css"
 import { useState } from "react"
 import Link from "next/link";
@@ -49,11 +48,11 @@ export default function NavBar(){
             <div className={styles.bar}>
                 <h1 className={styles.nameHeader}>Chris Randall</h1>
                 <div className={styles.break}></div>
-                <Link className={styles.link} href="#aboutme"><h1 id="aboutMeHeader" className={`${styles.sectionNames} ${styles.selected}`}>About Me</h1></Link>
+                <Link className={styles.link} href="#aboutme" ><h1 id="aboutMeHeader" className={`${styles.sectionNames} ${styles.selected}`}>About Me</h1></Link>
                 <Link className={styles.link} href="#skills"><h1 id="skillsHeader" className={styles.sectionNames}>Skills</h1></Link>
                 <Link className={styles.link} href="#portfolio"><h1 id="portfolioHeader" className={styles.sectionNames}>Portfolio</h1></Link>
                 <Link className={styles.link} href="#contact"><h1 id="contactHeader" className={styles.sectionNames}>Contact</h1></Link>
-                <Link className={styles.link} href="Chris_Resume.pdf" target="_blank"><h1 className={styles.sectionNames}>Resume</h1></Link>
+                <Link className={styles.link} href="Chris_Resume.pdf" target="_blank"><h1 className={styles.sectionNames}>Resume🔗</h1></Link>
             </div>
         </>
     )

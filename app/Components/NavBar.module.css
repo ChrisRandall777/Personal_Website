@@ -1,13 +1,15 @@
 .bar {
     position: fixed;
-    background-color: #3d5a80;
+    top: 0;
+    background-color: var(--background-color);
     height: 60px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
     align-items: center;
-    
+    border-bottom: 2px solid var(--primary-color);
+    z-index: 1000;
 }
 
 .sectionNames {
@@ -16,28 +18,20 @@
     font-size: large;
 }
 
-.sectionNames:hover {
-    background-color: #ee6d4d8e;
-}
-
 .selected {
-    background-color: #ee6c4d;
-}
-
-.selected:hover{
-    background-color: #ee6c4d;
+    border: 2px solid var(--primary-color);
 }
 
 .link {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
 }
 
 .nameHeader {
     margin: 0 auto 0 20px;
     padding: 5px;
     font-size: x-large;
-    background: linear-gradient(to right, orange, red);
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
     background-clip: text;
     color: transparent
 }

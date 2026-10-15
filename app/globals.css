@@ -1,5 +1,11 @@
+:root {
+  --header-size: 60px;
+  /* Color Palette Variables are set in ThemeToggle component */
+}
+
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-size);
 }
 
 body {
@@ -10,23 +16,26 @@ body {
   margin-top: 0px;
   padding-top: 10px;
   text-align: center;
-  color: #ee6c4d;
-  text-decoration: underline;
-  text-decoration-color: black;
+  color: var(--primary-color);
+  text-decoration: 2px underline var(--text-color);
+}
+
+.nameContainer {
+  height: calc(100vh - var(--header-size));
 }
 
 .spaceDiv {
-  height: 60px;
+  height: var(--header-size);
 }
 
 @media (max-width: 760px){
-    .spaceDiv {
-        height: 80px;
+    :root {
+        --header-size: 80px;
     }
 }
 
 @media (max-width: 500px){
-    .spaceDiv {
-        height: 70px;
+    :root {
+        --header-size: 70px;
     }
 }

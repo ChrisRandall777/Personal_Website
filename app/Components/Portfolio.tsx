@@ -1,5 +1,4 @@
 "use client"
-import "../globals.css"
 import styles from "./Portfolio.module.css"
 import Card from "./Card"
 
@@ -46,7 +45,6 @@ export default function(){
     return (
         <>
             <div className={styles.portfolioSection}>
-                <div className="spaceDiv"></div>
                 <h1 className="sectionHeader">Portfolio</h1>
                 
                 <div className={styles.cardsContainer}>
