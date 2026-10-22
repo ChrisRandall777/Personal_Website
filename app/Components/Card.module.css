@@ -1,12 +1,17 @@
 .wrapper {
     position: relative;
+    height: fit-content;
+    width: fit-content;
     z-index: 0;
 }
 
 .card {
     display: flex;
+    justify-content: center;
+    align-items: center;
     column-gap: 20px;
     padding: 20px;
+    height: 275px;
     width: 400px;
     background-color: var(--background-color);
     border: 2px solid var(--text-color);
@@ -24,36 +29,25 @@
     z-index: -1;
 }
 
+.title {
+    margin-top: 0px;
+}
+
 .cardImage {
     width: 150px;
     height: 150px;
 }
 
-.learnMore {
-    width: fit-content;
-}
-
-.learnMore:hover {
-    text-decoration: underline;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 @media (max-width: 560px){
     .card {
         flex-direction: column;
+        height: 325px;
         width: 250px;
-        align-items: center;
         text-align: center;
     }
 
     .cardImage {
         width: 100px;
         height: 100px;
-    }
-
-    .learnMore {
-        margin: auto;
-        padding-top: 5px;
     }
 }

@@ -6,9 +6,11 @@ const Name = () => {
     const [mounted, setMounted] = useState(false);
 
     let name = "Hi, I'm Chris";
+
     function randomHeight() {
         return Math.floor(Math.random() * 500) + 50;
     }
+
     function createBall(){
         let ballElement = document.createElement('div');
         ballElement.className = styles.ball;
@@ -32,11 +34,24 @@ const Name = () => {
         
     }
 
+    function updateOpacity(){
+        let scroll = document.documentElement.scrollTop;
+        let opacity = 1 - scroll / 200;
+        if(opacity > 0){
+            document.getElementById("arrow")?.style.setProperty("opacity", `${opacity}`);
+        } else {
+            document.getElementById("arrow")?.style.setProperty("display", "none");
+            document.removeEventListener("scroll", updateOpacity);
+        }
+    }
+
     useEffect(() => {
         setMounted(true)
         setTimeout(() => {
             setInterval(createBall, 100);
         }, 1000)
+
+        document.addEventListener("scroll", updateOpacity)
     }, []);
 
     return (
@@ -62,7 +77,7 @@ const Name = () => {
                 </div>
                 
             </div>
-            <div className={styles.bottomText}>Check out more below ↓</div>
+            <div id="arrow" className={styles.bottomArrow}>➤</div>
             <div className={styles.bottomFadeOut}></div>
         </div>
     );

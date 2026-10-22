@@ -28,7 +28,6 @@ const ThemeToggle = () => {
     }, []);
 
     useEffect(() => {
-        console.log("themes", theme, systemTheme);
         if(theme === "system"){
             handleThemeChange(systemTheme || "light");
         } else {
