@@ -52,7 +52,7 @@ export default function NavBar(){
                 <Link className={styles.link} href="#skills"><h1 id="skillsHeader" className={styles.sectionNames}>Skills</h1></Link>
                 <Link className={styles.link} href="#portfolio"><h1 id="portfolioHeader" className={styles.sectionNames}>Portfolio</h1></Link>
                 <Link className={styles.link} href="#contact"><h1 id="contactHeader" className={styles.sectionNames}>Contact</h1></Link>
-                <Link className={styles.link} href="Chris_Resume.pdf" target="_blank"><h1 className={styles.sectionNames}>Resume🔗</h1></Link>
+                <Link className={styles.link} href="resume.pdf" target="_blank"><h1 className={styles.sectionNames}>Resume🔗</h1></Link>
             </div>
         </>
     )
