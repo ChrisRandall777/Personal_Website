@@ -11,7 +11,6 @@
     align-items: center;
     column-gap: 20px;
     padding: 20px;
-    height: 275px;
     width: 400px;
     background-color: var(--background-color);
     border: 2px solid var(--text-color);
@@ -31,6 +30,8 @@
 
 .title {
     margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .cardImage {
@@ -38,10 +39,15 @@
     height: 150px;
 }
 
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+}
+
 @media (max-width: 560px){
     .card {
         flex-direction: column;
-        height: 325px;
         width: 250px;
         text-align: center;
     }

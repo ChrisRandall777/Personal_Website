@@ -36,28 +36,7 @@ export default function Skills(){
                     <SkillsContainer title="Frontend Skills" contentInfo={frontendContentInfo} />
                     <SkillsContainer title="Backend Skills" contentInfo={backendContentInfo} />
                 </div>
-                
-                
             </div>
-            {/* 
-                <img className={styles.icon} src="skill_icons/html-5.png"/>
-                <img className={styles.icon} src="skill_icons/js.png"/>
-                <img className={styles.icon} src="skill_icons/typescript.png"/>
-                <img className={styles.icon} src="skill_icons/css-3.png"/>
-                <img className={styles.icon} src="skill_icons/java.png"/>
-                <img className={styles.icon} src="skill_icons/python.png"/>
-                <img className={styles.icon} src="skill_icons/c.png"/>
-                <img className={styles.icon} src="skill_icons/c-.png"/>
-            
-                <li>React</li>
-                <li>JQuery</li>
-                <li>Next.js</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>D3.js</li>
-                <li>Pandas</li>
-                <li>Numpy</li>
-            */}
         </>
     )
 }
